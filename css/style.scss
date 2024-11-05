@@ -1,0 +1,22 @@
+// Google Font
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+// Bootstrap
+@import "../plugins/bootstrap/scss/bootstrap.scss";
+
+// Font Awesome
+@import "../plugins/font-awesome/scss/font-awesome.scss";
+
+// Jquery Ui
+@import "../plugins/jquery_ui/jquery-ui.css";
+
+// Components Folder
+@import "components/mixins";
+@import "components/variables";
+@import "components/reset";
+@import "components/buttons";
+@import "components/form";
+@import "components/header";
+@import "components/footer";
+@import "components/components";
+@import "components/section";

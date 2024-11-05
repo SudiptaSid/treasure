@@ -1,0 +1,65 @@
+/* ---------- Reset ---------- */
+html, body {
+    height:100%;
+}
+body {
+    font-family:$main_font;
+    font-size: 20px;
+    line-height:1.5;
+    font-weight:400;
+    color:$white_clr;
+    overflow-x: hidden;
+    @media (max-width: $break_1280) {
+        font-size:18px;
+    }
+    @media (max-width: $break_1080) {
+        font-size:16px;
+    }
+    @media (max-width: $break_991) {
+        font-size:14px;
+    }
+    @media (max-width: $break_768) {
+        font-size:12px;
+    }
+}
+ul,ol {
+    list-style-type:none;
+    padding-left:0px;
+    margin-bottom:0px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight:500;
+    margin-bottom:15px;
+    line-height:1.4;
+}
+h1 {
+    font-size:2.8em;
+}
+h2 {
+    font-size:2.2em;
+}
+h3 {
+    font-size:1.6em;
+}
+h4 {
+    font-size:1.375em;
+}
+h5 {
+    font-size:1em;
+}
+h6 {
+    font-size:0.75em;
+}
+a {
+    text-decoration: none;
+    transition:600ms;
+    &:hover {
+        text-decoration: none;
+    }
+}
+a, button, input, textarea, select {
+    &:focus, &:hover, &:active {
+        outline:none;
+        box-shadow:none;
+    }
+}

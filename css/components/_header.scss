@@ -1,0 +1,176 @@
+// Sidebar
+#cs_sidebar {
+    max-width: 300px;
+    min-width: 300px;
+    height: 100%;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    z-index: 999;
+    background-color:rgba($black_clr, 0.8);
+    padding-top:60px;
+    text-align: right;
+    transition:600ms ease-out all;
+    &.view {
+        left:0;
+    }
+    .close_bar {
+        margin-bottom:30px;
+        padding-right:20px;
+        a {
+            display: inline-block;
+            img {
+                height:30px;
+            }
+        }
+    }
+    .bar_links {
+        ul {
+            li {
+                a {
+                    display: block;
+                    padding:10px 20px;
+                    color:$white_clr;
+                    font-weight:600;
+                    text-transform: capitalize;
+                    position: relative;
+                    &:after {
+                        content:'';
+                        width:100%;
+                        height: 100%;
+                        position: absolute;
+                        left:-100%;
+                        top: 0;
+                        background-color:$main_clr;
+                        z-index: -1;
+                        transition:600ms ease-out all;
+                    }
+                    &:hover, &.active {
+                        &::after {
+                            left:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Top Header
+.top_header {
+    display:flex;
+    justify-content:space-between;
+    margin:70px 0px 40px 0;
+    align-items:center;
+    flex-wrap:wrap;
+    @media (max-width: $break_991) {
+        margin:40px 0px 20px 0;
+    }
+    .left_btn {
+        a {
+            color:$white_clr;
+            font-weight: 700;
+            img {
+                height:40px;
+                @media (max-width: $break_768) {
+                    height:20px;
+                }
+            }
+        }
+    }
+    .heading_pg {
+        h4 {
+            margin-bottom:0;
+            font-weight:700;
+            color:$main_clr;
+            margin:0;
+            line-height:1;
+            color:$main_clr;
+            text-transform: capitalize;
+            span {
+                background-image:url(../images/heading1.png);
+                background-repeat: no-repeat;
+                background-size: 100% 8px;
+                background-position: bottom;
+                padding: 0px 20px 5px 20px;
+                @media (max-width: $break_768) {
+                    background-size: 100% 5px;
+                }
+            }
+        }
+    }
+    .logo {
+        a {
+            img {
+                height:40px;
+                @media (max-width: $break_768) {
+                    height:30px;
+                }
+            }
+        }
+    }
+    .right_menu {
+        @media (max-width: $break_768) {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .boxis {
+            display: flex;
+            align-items: center;
+            background-color:rgba($black_clr, 0.4);
+            border-radius: 25px;
+            a {
+                color:$white_clr;
+                &#cs_profile {
+                    padding:3px 10px 5px 5px;
+                    background-color:$main_clr;
+                    border-radius: 20px 0 0 20px;
+                }
+                &#cs_add {
+                    padding: 2px 5px 5px 10px;
+                }
+                img {
+                    height:30px;
+                    @media (max-width: $break_768) {
+                        height:20px;
+                    }
+                }
+            }
+            #cs_balance {
+                color:$white_clr;
+                padding:0px 20px;
+                span {
+                    color:$main_clr;
+                }
+            }
+        }
+    }
+}
+// Heading 1 
+.heading1 {
+    text-align: center;
+    position: relative;
+    margin:40px 0;
+    @media (max-width: $break_768) {
+        margin:20px 0;
+    }
+    h4 {
+        font-weight:700;
+        color:$white_clr;
+        margin:0;
+        line-height:1;
+        color:$main_clr;
+        text-transform: capitalize;
+    }
+    span {
+        background-image:url(../images/heading1.png);
+        background-repeat: no-repeat;
+        background-size: 100% 10px;
+        background-position: bottom;
+        padding: 0px 20px 15px 20px;
+        @media (max-width: $break_768) {
+            padding-bottom: 8px;
+            background-size: 100% 5px;
+        }
+    }
+}

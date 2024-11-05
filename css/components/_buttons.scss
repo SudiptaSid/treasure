@@ -1,0 +1,94 @@
+// Buttons
+.btn {
+    border:none;
+    border-radius:0;
+    padding: 0px;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1em;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color:$white_clr;
+    min-width: 150px;
+    min-height: 50px;
+    line-height: 45px;
+    box-shadow:none;
+    text-align: center;
+    &:hover, &:focus, &:active {
+        outline:0;
+        color:$white_clr;
+        box-shadow:none;
+    }
+    @media (max-width: $break_1280) {
+        min-width: 120px;
+        min-height: 40px;
+        line-height: 40px;
+    }
+}
+.btn_1 {
+    background-image:url(../images/btn_1.png);
+    text-shadow: 0px 0px 10px $red_clr;
+    min-height: 60px;
+    line-height: 55px;
+    &:hover, &:focus, &:active {
+        background-image:url(../images/btn_1.png);
+    }    
+    @media (max-width: $break_991) {
+        min-width: 120px;
+        min-height: 30px;
+        line-height: 45px;
+    }
+}
+.btn_2 {
+    background-image:url(../images/btn_2.png);
+    &:hover, &:focus, &:active {
+        background-image:url(../images/btn_2.png);
+    }
+    &.btn_ina {
+        background-image:url(../images/btn_2_inac.png);
+        color:$main_clr;
+        &:hover, &:focus, &:active {
+            background-image:url(../images/btn_2_inac.png);
+        }
+    }
+}
+.btn_3 {
+    background-image:url(../images/btn_3.png);
+    &:hover, &:focus, &:active {
+        background-image:url(../images/btn_3.png);
+    }
+}
+.btn_4 {
+    background-image:url(../images/btn_4.png);
+    line-height:45px;
+    &:hover, &:focus, &:active {
+        background-image:url(../images/btn_4.png);
+    }
+}
+// Btn Small
+.btn_sm {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: none;
+    color:$white_clr;
+    text-transform: capitalize;
+    padding:2px 20px;
+    display: inline-block;
+    text-align: center;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+    &:hover, &:focus, &:active {
+        outline:0;
+        color:$white_clr;
+        box-shadow:none;
+    }
+}
+.btn_sm1 {
+    background-image:url(../images/btn_5.png);
+    &:hover, &:focus, &:active {
+        background-image:url(../images/btn_5.png);
+    }
+}

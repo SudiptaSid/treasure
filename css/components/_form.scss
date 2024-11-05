@@ -1,0 +1,110 @@
+// Form
+label {
+    margin-bottom:0;
+    display: block;
+    text-transform: capitalize;
+    a {
+        color:$white_clr;
+        text-decoration: underline;
+        &:hover {
+            color:$main_clr;
+        }
+    }
+}
+.form-control {
+    border:none;
+    padding:10px 20px;
+    line-height:1.4;
+    font-size:1em;
+    &:focus {
+        outline:0;
+        box-shadow:none;
+    }
+}
+select.form-control {
+    height:auto !important;
+    background-image:url(../images/select_arrow.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position:calc(100% - 15px);
+    -webkit-appearance:none;
+}
+// Custom Checkbox
+.cs_checkbox {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    line-height:20px;
+    user-select: none;
+    margin-left:10px;
+    &:nth-child(2) {
+        margin-left: 0;
+    }
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        border:2px solid $white_clr;
+        border-radius:5px;
+    }
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        &:checked ~ .checkmark {
+            background-color: $main_clr;
+            border-color:$main_clr;
+        }
+    }    
+}
+// Custom Radio
+.cs_radio {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    line-height:20px;
+    user-select: none;
+    margin-left:10px;
+    &:nth-child(2) {
+        margin-left: 0;
+    }
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        border:2px solid $white_clr;
+        border-radius:50%;
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            top: 3px;
+            left: 3px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: $main_clr;
+        }
+    }
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        &:checked ~ .checkmark {
+            border-color:$main_clr;
+            &:after {
+                display: block;
+            }
+        }
+    }
+}
